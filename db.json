@@ -1,0 +1,20 @@
+{
+    "accounts": [
+        { "id": 1, "amount": 1 },
+        { "id": 2, "amount": 10 },
+        { "id": 3, "amount": 100 },
+        { "id": 4, "amount": 1000 }
+    ],
+    "bonus": [
+        { "id": 1, "userId": 1, "points": 10 },
+        { "id": 2, "userId": 2, "points": 10 },
+        { "id": 3, "userId": 2, "points": 10 },
+        { "id": 4, "userId": 3, "points": 10 },
+        { "id": 5, "userId": 3, "points": 10 },
+        { "id": 6, "userId": 3, "points": 10 },
+        { "id": 7, "userId": 4, "points": 10 },
+        { "id": 8, "userId": 4, "points": 10 },
+        { "id": 9, "userId": 4, "points": 10 },
+        { "id": 10, "userId": 4, "points": 10 }
+    ]
+}
