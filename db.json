@@ -8,13 +8,13 @@
     "bonus": [
         { "id": 1, "userId": 1, "points": 10 },
         { "id": 2, "userId": 2, "points": 10 },
-        { "id": 3, "userId": 2, "points": 10 },
-        { "id": 4, "userId": 3, "points": 10 },
-        { "id": 5, "userId": 3, "points": 10 },
-        { "id": 6, "userId": 3, "points": 10 },
-        { "id": 7, "userId": 4, "points": 10 },
-        { "id": 8, "userId": 4, "points": 10 },
-        { "id": 9, "userId": 4, "points": 10 },
-        { "id": 10, "userId": 4, "points": 10 }
+        { "id": 3, "userId": 2, "points": 10 }
+    ],
+    "tasks": [
+        { "id": 1, "page": 1, "task": "eat" },
+        { "id": 2, "page": 1, "task": "sleep" },
+        { "id": 3, "page": 1, "task": "code" },
+        { "id": 4, "page": 1, "task": "watch youtube" },
+        { "id": 5, "page": 1, "task": "repeat" }
     ]
 }

@@ -7,11 +7,9 @@ import logger from 'redux-logger'
 //acion types
 const ADD = 'ADD'
 const SUBTRACT = 'SUBTRACT'
-const ACCOUNT_INIT = 'account/INIT'
 const ACCOUNT_INIT_PENDING = 'account/INIT/pending'
 const ACCOUNT_INIT_FULLFILLED = 'account/INIT/fullfilled'
 const ACCOUNT_INIT_REJECTED = 'account/INIT/rejected'
-
 
 
 const accountReducer = (state={ amount:0 }, action) => {
