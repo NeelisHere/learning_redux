@@ -1,14 +1,17 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import counterSlice from "./slices/counterSlice";
-import pointSlice from "./slices/pointSlice";
+import { configureStore } from "@reduxjs/toolkit";
+import { setupListeners } from "@reduxjs/toolkit/dist/query";
+import { todosAPI } from "./slices/todosAPI";
 
-const reducer = combineReducers({
-    counter: counterSlice,
-    point: pointSlice
+export const store = configureStore({
+    reducer: {
+        [todosAPI.reducerPath]: todosAPI.reducer
+    },
+    middleware: (getDefaultMiddleware) => {
+        
+        return getDefaultMiddleware().concat(todosAPI.middleware)
+    }
+        
 })
 
-const store = configureStore({
-    reducer
-})
+setupListeners(store.dispatch)
 
-export default store
