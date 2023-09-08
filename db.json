@@ -37,7 +37,7 @@
   "tasks": [
     {
       "id": 1,
-      "isCompleted": false,
+      "isCompleted": true,
       "task": "eat"
     },
     {
@@ -47,13 +47,13 @@
     },
     {
       "id": 3,
-      "isCompleted": false,
+      "isCompleted": true,
       "task": "code"
     },
     {
-      "id": 4,
-      "isCompleted": true,
-      "task": "repeat"
+      "id": 5,
+      "isCompleted": false,
+      "task": "take shower"
     }
   ]
 }
