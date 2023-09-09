@@ -36,9 +36,27 @@ io.on("connection", (socket) => {
     socket.on('join-room', (data) => {
         console.log(data)
         const { roomId, username } = data
+        // switch (roomId) {
+        //     case '1':{
+        //         socket.join('1')
+        //         io.sockets.in('1').emit('receive_message', {
+        //             roomId: '1',
+        //             username,
+        //             __createdtime__: Date.now(),
+        //         })
+        //     }
+        //     case '2':{
+        //         socket.join('2')
+        //         io.sockets.in('2').emit('receive_message', {
+        //             roomId: '2',
+        //             username,
+        //             __createdtime__: Date.now(),
+        //         })
+        //     }
+        // }
         socket.join(roomId)
         io.sockets.in(roomId).emit('receive_message', {
-            message: `${username} has joined the chat room`,
+            roomId,
             username,
             __createdtime__: Date.now(),
         })

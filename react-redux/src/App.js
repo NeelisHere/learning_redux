@@ -7,6 +7,9 @@ import './App.css';
 import ChatBox from './components/ChatBox';
 import Chat from './components/Chat';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import io from 'socket.io-client';
+
+const socket = io.connect('http://localhost:4000');
 
 const router = createBrowserRouter([
     {
@@ -15,7 +18,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/chat",
-        element: <Chat />,
+        element: <Chat socket={socket}/>,
     },
     // {
     //     path: "/chatbox",
